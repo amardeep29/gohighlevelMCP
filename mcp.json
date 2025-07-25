@@ -1,0 +1,80 @@
+{
+  "name": "ghl-mcp-server",
+  "version": "2.0.0",
+  "description": "Enhanced Go High Level MCP Server with Custom Fields Support",
+  "author": "Aman",
+  "license": "MIT",
+  "main": "dist/server.js",
+  "type": "server",
+  "capabilities": [
+    "resources",
+    "tools"
+  ],
+  "tools": [
+    {
+      "name": "search_contacts",
+      "description": "Search for contacts in Go High Level"
+    },
+    {
+      "name": "get_contact",
+      "description": "Get detailed contact information"
+    },
+    {
+      "name": "create_contact", 
+      "description": "Create a new contact"
+    },
+    {
+      "name": "create_note",
+      "description": "Create a note for a contact"
+    },
+    {
+      "name": "get_contact_notes",
+      "description": "Get all notes for a contact"
+    },
+    {
+      "name": "create_task",
+      "description": "Create a task for a contact"
+    },
+    {
+      "name": "list_calendar_appointments",
+      "description": "List calendar appointments"
+    },
+    {
+      "name": "send_sms",
+      "description": "Send SMS message"
+    },
+    {
+      "name": "send_email", 
+      "description": "Send email message"
+    },
+    {
+      "name": "get_conversation_history",
+      "description": "Get conversation history for a contact"
+    },
+    {
+      "name": "move_opportunity_stage",
+      "description": "Move opportunity to different pipeline stage"
+    },
+    {
+      "name": "assign_opportunity",
+      "description": "Assign opportunity to user"
+    },
+    {
+      "name": "get_pipeline_stages",
+      "description": "List pipeline stages"
+    },
+    {
+      "name": "get_pipeline_info",
+      "description": "Get pipeline information"
+    },
+    {
+      "name": "create_custom_field",
+      "description": "Create custom field in Go High Level"
+    }
+  ],
+  "repository": "https://github.com/amardeep29/gohighlevelMCP",
+  "keywords": ["mcp", "gohighlevel", "crm", "automation", "custom-fields"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
