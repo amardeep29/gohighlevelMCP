@@ -1,0 +1,29 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['dist/server.js'], env: { GHL_ACCESS_TOKEN: config.ghlAccessToken, GHL_LOCATION_ID: config.ghlLocationId, GHL_API_BASE_URL: config.ghlApiBaseUrl } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - ghlAccessToken
+      - ghlLocationId
+    properties:
+      ghlAccessToken:
+        type: string
+        description: Go High Level API access token
+      ghlLocationId:
+        type: string
+        description: Go High Level location/workspace ID
+      ghlApiBaseUrl:
+        type: string
+        default: https://services.leadconnectorhq.com
+        description: Base URL for GHL API
+  exampleConfig:
+    ghlAccessToken: pit-exampletoken1234567890
+    ghlLocationId: location123
+    ghlApiBaseUrl: https://services.leadconnectorhq.com
