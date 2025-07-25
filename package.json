@@ -1,0 +1,44 @@
+{
+  "name": "ghl-mcp-server-enhanced-fixed",
+  "version": "2.0.0",
+  "description": "Enhanced Go High Level MCP Server with Custom Fields Support",
+  "main": "dist/server.js",
+  "bin": {
+    "ghl-mcp-setup": "./install.js"
+  },
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.js",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch server.ts",
+    "test": "node test-custom-fields.js",
+    "quick-start": "npm run setup && npm run build && npm start",
+    "prestart": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gohighlevel",
+    "crm",
+    "api",
+    "automation",
+    "custom-fields"
+  ],
+  "author": "Aman",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
