@@ -1,5 +1,7 @@
 # 🚀 Go High Level MCP Server - One-Click Setup!
 
+[![smithery badge](https://smithery.ai/badge/@amardeep29/gohighlevelmcp)](https://smithery.ai/server/@amardeep29/gohighlevelmcp)
+
 > **Enhanced MCP Server for Go High Level with Custom Fields Support**
 
 ## ⚡ **SUPER QUICK INSTALL (30 seconds)**
@@ -75,6 +77,14 @@ Add this to your Claude config file:
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install gohighlevelmcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@amardeep29/gohighlevelmcp):
+
+```bash
+npx -y @smithery/cli install @amardeep29/gohighlevelmcp --client claude
 ```
 
 ### Other MCP Clients
